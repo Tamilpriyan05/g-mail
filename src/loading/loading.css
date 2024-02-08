@@ -1,0 +1,25 @@
+.loading_box {
+  position: absolute;
+  inset: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.smallloading {
+  position: absolute;
+  z-index: 5;
+  top: 0px;
+  left: 50%;
+  right: 50%;
+}
+.smallloading p {
+  display: inline-block;
+  padding: 5px 20px;
+  letter-spacing: 1px;
+  background-color: rgb(252, 228, 88);
+  font-weight: 500;
+}

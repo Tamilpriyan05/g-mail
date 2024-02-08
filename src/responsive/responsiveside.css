@@ -1,0 +1,110 @@
+.responsivesidebarbox {
+  position: absolute;
+  overflow-y: auto;
+  top: 0;
+  width: max-content;
+  height: 100vh;
+  z-index: 201;
+  background-color: #f6f8fc;;
+}
+.res_sidewidth {
+  margin-left: 0px;
+  display: none;
+}
+.res_side0 {
+  margin-left: -2000px;
+  transition: 1s;
+  display: none;
+}
+.responsivesidebarbox::-webkit-scrollbar {
+  width: 8px;
+}
+
+.responsivesidebarbox::-webkit-scrollbar-thumb {
+  display: none;
+  background: #f4f4f4;
+}
+.responsivesidebarbox::-webkit-scrollbar-track {
+  display: none;
+  background: #f1f1f1;
+}
+.responsivesidebarbox::-webkit-scrollbar-thumb:hover {
+  display: block;
+  background: #555;
+}
+.ressponsivesidebar_img {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: solid 2px grey;
+}
+.ressponsivesidebar_img p {
+  position: absolute;
+  z-index: 102;
+  right: -190px;
+  top: 7px;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  color: rgb(192, 0, 0) !important;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.responsivesidebarbox img {
+  padding: 10px 20px;
+}
+.res_side_allmsg {
+  border-bottom: solid 2px grey;
+}
+.responsivesidebarbox p {
+  padding: 10px;
+  color: rgb(30, 29, 29);
+  padding-right: 200px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.responsivesidebarbox p:hover {
+  background-color: rgb(189, 189, 189);
+}
+.responsivesidebarbox p span {
+  margin-right: 20px;
+  color: rgb(118, 118, 118);
+  font-weight: 900;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .res_sidewidth {
+    margin-left: 0px;
+    transition: 0.5s;
+    display: block;
+  }
+  .res_side0 {
+    margin-left: -2000px;
+    transition: 0.5s;
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .res_sidewidth {
+    margin-left: 0px;
+    transition: 0.5s;
+    display: block;
+  }
+  .res_side0 {
+    margin-left: -2000px;
+    transition: 0.5s;
+    display: block;
+  }
+}
+@media screen and (max-width: 576px) {
+  .res_sidewidth {
+    margin-left: 0px;
+    transition: 0.5s;
+    display: block;
+  }
+  .res_side0 {
+    margin-left: -2000px;
+    transition: 0.5s;
+    display: block;
+  }
+}

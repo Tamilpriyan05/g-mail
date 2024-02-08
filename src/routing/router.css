@@ -1,0 +1,144 @@
+.routerbox {
+  display: flex;
+}
+.routercomponents {
+  width: 84%;
+  margin: 0px 30px;
+  margin-right: 20px;
+  overflow-x: hidden;
+}
+.sidebar {
+  width: 15%;
+}
+.compose {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 17px 22px;
+  background-color: #c2e7ff;
+  margin-top: 8px;
+  border-radius: 16px;
+  font-weight: 500;
+  color: #001d35;
+  cursor: pointer;
+}
+.compose:hover{
+  box-shadow: 1px 1px 10px rgb(70, 70, 70);
+}
+.penicon {
+  margin-right: 12px;
+}
+.side_links {
+  margin-top: 15px;
+}
+
+.side_links li {
+  padding: 5px 32px;
+  color: #686868;
+
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.side_links li:hover {
+  background-color: #cbd0d2;
+  color: black;
+}
+.side_links li:active {
+  background-color: #c9e8fc;
+}
+
+.side_links li span {
+  margin-left: 20px;
+  color: #202124;
+  font-size: 15px;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+.inbox_icon {
+  font-size: 14px;
+}
+.lable_icon {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 30px;
+  color: #1f1f1f;
+}
+.lable_icon span {
+  padding: 0px 8px;
+  font-size: 16px;
+  transition: 15ms;
+  cursor: pointer;
+  border-radius: 50%;
+  color: grey;
+}
+.lable_icon span:hover {
+  background-color: rgb(173, 170, 170);
+}
+.link_hide {
+  margin: 0px;
+  display: none;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1022px) {
+  .routercomponents {
+    width: 84%;
+    margin: 0px 30px;
+    margin-right: 10px;
+    overflow-x: hidden;
+  }
+
+  .compose {
+    margin-left: 5px;
+    padding: 15px 18px;
+
+    border-radius: 14px;
+  }
+  .side_links li span {
+    margin-left: 12px;
+  }
+  .side_links li {
+    padding: 5px 20px;
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .routerbox {
+    display: block;
+  }
+  .routercomponents {
+    width: 98%;
+    margin: 0px 10px;
+    margin-right: 10px;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .routerbox {
+    display: block;
+  }
+  .routercomponents {
+    width: 97%;
+    margin: 0px 10px;
+    overflow-x: hidden;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .routerbox {
+    display: block;
+  }
+  .routercomponents {
+    width: 97%;
+    margin: 0px 10px;
+    overflow-x: hidden;
+  }
+  .sidebar {
+    display: none;
+  }
+}

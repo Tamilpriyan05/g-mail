@@ -1,0 +1,150 @@
+.inboxmessage_box {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: max-content;
+  max-height: 80vh;
+  padding-bottom: 30px;
+}
+.max-height_inbox {
+  padding: 20px 0px;
+  background-color: #ffffff;
+  height: 78vh;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.inboxmessage_box::-webkit-scrollbar {
+  width: 8px;
+  background-color: white;
+}
+.inboxmessage_box::-webkit-scrollbar:hover {
+  background-color: #d7d7d7;
+}
+.inboxmessage_box::-webkit-scrollbar-thumb {
+  background-color: #d7d7d7;
+}
+.inboxmessage_box::-webkit-scrollbar-thumb:hover {
+  background-color: #8d8d8d;
+}
+.input_message .msg_boxes {
+  background-color: hsl(207, 65%, 97%);
+  border-bottom: 2px solid rgb(213, 213, 213);
+  padding: 10px 20px;
+  color: black;
+}
+.msg_boxes:hover {
+  box-shadow: 5px 5px 10px;
+}
+.input_message .msg_boxes input {
+  width: 15px;
+  height: 15px;
+  color: grey;
+  border: solid grey;
+}
+.input_message .msg_boxes label {
+  font-size: 14px;
+  color: rgb(154, 154, 154);
+}
+.input_message .msg_boxes :nth-child(3) {
+  font-size: 14px;
+  text-align: left;
+}
+.input_message .msg_boxes :nth-child(4) {
+  font-size: 14px;
+}
+.hover_message {
+  position: absolute;
+  margin-top: 8px;
+  padding-left: 3px;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+}
+.hover_message p span {
+  margin-left: 5px;
+  margin-right: 20px;
+  color: grey;
+}
+
+.hover_message p {
+  color: rgb(197, 197, 197);
+}
+.msg_date {
+  font-size: 10px;
+}
+.inboxmsg_phone {
+  display: none;
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .msg_boxes {
+    display: none;
+  }
+  .inboxmsg_phone {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: hsl(207, 65%, 97%);
+    border-bottom: 2px solid rgb(213, 213, 213);
+    padding: 10px 20px;
+    color: black;
+  }
+  .inboxmsg_phonebox1 img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+  .inboxmsg_phonebox1 {
+    width: 5%;
+  }
+  .inboxmsg_phonebox2 {
+    width: 90%;
+  }
+  .inboxmsg_phonebox2 p {
+    font-size: 12px;
+  }
+  .inboxmsg_phonebox3 {
+    position: absolute;
+    z-index: 4;
+    right: 0;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .msg_boxes {
+    display: none;
+  }
+  .inboxmsg_phone {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: hsl(207, 65%, 97%);
+    border-bottom: 2px solid rgb(213, 213, 213);
+    padding: 10px;
+    color: black;
+  }
+  .inboxmsg_phonebox1 img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+  .inboxmsg_phonebox1 {
+    width: 10%;
+  }
+  .inboxmsg_phonebox2 {
+    width: 85%;
+  }
+  .inboxmsg_phonebox2 p {
+    font-size: 12px;
+  }
+  .inboxmsg_phonebox3 {
+    position: absolute;
+    z-index: 4;
+    right: 0;
+    font-size: 14px;
+  }
+}

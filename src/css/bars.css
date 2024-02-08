@@ -1,0 +1,84 @@
+.barsbox {
+  display: flex;
+  flex-wrap: wrap;
+  width: 16%;
+}
+.barsbox p abbr {
+  position: relative;
+  top: 7px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #5f6368;
+}
+.phone_bar {
+  display: none;
+}
+.barsbox p abbr:hover {
+  background-color: grey;
+}
+
+.barsbox abbr img {
+  margin-left: 5px;
+}
+.barsbox abbr span {
+  position: relative;
+  font-size: 22px;
+  top: -8px;
+  margin-left: 10px;
+  font-weight: 500;
+  color: rgb(54, 54, 54);
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .barsbox {
+    width: 20%;
+  }
+  .barsbox p abbr {
+    padding: 8px 13px;
+    font-size: 18px;
+  }
+
+  .barsbox abbr img {
+    margin-left: 3px;
+  }
+  .phonebar_none {
+    display: none;
+  }
+  .phone_bar {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .barsbox {
+    width: 30%;
+    top: 13px;
+    left: 13px;
+    z-index: 3;
+  }
+  .barsbox p abbr {
+    font-size: 17px;
+  }
+  .phonebar_none {
+    display: none;
+  }
+  .phone_bar {
+    display: block;
+  }
+}
+@media screen and (max-width: 576px) {
+  .barsbox {
+    z-index: 5;
+    position: absolute;
+    left: 10px;
+    top: 11px;
+  }
+  .phonebar_none,
+  .barsbox abbr img {
+    display: none;
+  }
+  .phone_bar {
+    display: block;
+  }
+}

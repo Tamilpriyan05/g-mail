@@ -1,0 +1,55 @@
+.inboxbutton {
+  display: flex;
+  background-color: white;
+}
+.inboxbutton button {
+  padding: 20px 130px 20px 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #444746;
+  cursor: pointer;
+}
+.inboxbutton button:hover {
+  background-color: rgb(232, 232, 232);
+}
+
+.inboxbutton button span {
+  margin-right: 20px;
+  color: #333;
+  font-size: 16px;
+}
+.hovered {
+  background-color: grey;
+}
+@media screen and (max-width: 1200px) and (min-width: 1022px) {
+  .inboxbutton button {
+    padding: 15px 64px 15px 15px;
+    letter-spacing: normal;
+  }
+  .inboxbutton button span {
+    color: #333;
+    font-size: 16px;
+  }
+  .inboxbutton {
+    display: block;
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .inboxbutton {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .inboxbutton {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .inboxbutton {
+    display: none;
+  }
+}

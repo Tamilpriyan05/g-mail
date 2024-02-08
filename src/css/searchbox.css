@@ -1,0 +1,149 @@
+.searchbox {
+  width: 74%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.searchbox input {
+  width: 680px;
+  height: 45px;
+  padding-left: 45px;
+  font-size: 16px;
+  border-radius: 30px;
+  background-color: #eaf1fb;
+  border: none;
+}
+.searchbox input:focus {
+  background-color: white;
+  outline: 0;
+}
+.search_icon {
+  position: absolute;
+  color: #444746;
+  padding: 7px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+  top: 7px;
+  left: 10px;
+}
+
+.searchbox_icons span:hover {
+  cursor: pointer;
+  background-color: rgb(174, 174, 174);
+}
+.filter_icon {
+  position: absolute;
+  color: #444746;
+  padding: 7px;
+  border-radius: 50%;
+  font-size: 18px;
+  top: 7px;
+  left: 683px;
+  cursor: pointer;
+}
+
+.search_input {
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+  text-align: start;
+}
+.searchbox_icons {
+  display: flex;
+  justify-content: right;
+
+  width: 10%;
+}
+.searchbox_icons span {
+  position: relative;
+  padding: 5px 7px;
+  border-radius: 50%;
+  right: -30px;
+  top: 7px;
+  font-size: 20px;
+  color: #5f6368;
+  margin-left: 5px;
+  text-align: center;
+  cursor: pointer;
+
+}
+@media screen and (max-width: 1200px) and (min-width: 1022px) {
+  .searchbox {
+    width: 70%;
+  }
+  .searchbox input {
+    width: 630px;
+  }
+  .filter_icon {
+    left: 633px;
+  }
+  .search_input {
+    width: 85%;
+  }
+  .searchbox_icons {
+    width: 15%;
+  }
+  .searchbox_icons span {
+    right: -30px;
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .searchbox {
+    width: 62%;
+  }
+  .searchbox input {
+    width: 350px;
+  }
+  .filter_icon {
+    left: 353px;
+  }
+  .search_input {
+    width: 80%;
+  }
+  .searchbox_icons {
+    width: 20%;
+  }
+  .searchbox_icons span {
+    right: -20px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .filter_icon {
+    z-index: 3;
+    left: 250px;
+  }
+
+  .searchbox {
+    width: 50%;
+  }
+  .search_input {
+    width: 100%;
+  }
+  .searchbox_icons {
+    display: none;
+  }
+  .searchbox input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .searchbox_icons,
+  .filter_icon,
+  .search_icon {
+    width: 0;
+    display: none;
+  }
+  .searchbox {
+    width: 100%;
+    display: block;
+  }
+  .searchbox input {
+    display: block;
+    width: 95%;
+  }
+  .search_input {
+    display: block;
+  }
+}

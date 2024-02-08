@@ -1,0 +1,25 @@
+.headerbox {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: transparent;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1022px) {
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+}
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .headerbox {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .headerbox {
+    display: block;
+    justify-content: center;
+  }
+}

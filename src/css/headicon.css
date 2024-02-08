@@ -1,0 +1,52 @@
+.headiconbox {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 2px;
+  justify-content: flex-end;
+  width: 10%;
+}
+.headiconbox span {
+  font-size: 20px;
+  padding: 5px 8px;
+  border-radius: 50%;
+  color: #5f6368;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.headiconbox span:hover {
+  background-color: rgb(174, 174, 174);
+}
+.headiconbox div img {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  margin-right: 30px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) and (min-width: 1022px) {
+  .headiconbox {
+    width: 14%;
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .headiconbox {
+    width: 18%;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .headiconbox {
+    z-index: 3;
+    width: 20%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .headiconbox {
+    position: absolute;
+    right: 5px;
+    top: 15px;
+  }
+  .headiconbox span {
+    display: none;
+  }
+}

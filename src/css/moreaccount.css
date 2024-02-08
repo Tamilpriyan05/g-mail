@@ -1,0 +1,128 @@
+.moreaccountbox {
+  position: absolute;
+  z-index: 100;
+  right: 20px;
+  top: 65px;
+  width: 410px;
+  height: 590px;
+  border-radius: 30px;
+  background-color: #eaf1fb;
+  box-shadow: 2px 2px 5px rgb(160, 160, 160);
+}
+.moreaccount_insidebox {
+  padding: 15px;
+}
+.moreaccoount_mail span {
+  position: absolute;
+  right: 30px;
+  top: 16px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.moreaccoount_mail p {
+  color: #1f1f1f;
+  font-weight: 500;
+  text-align: center;
+  font-size: 14px;
+  text-overflow: ellipsis;
+}
+.moreaccount_Img {
+  text-align: center;
+  margin-top: 30px;
+}
+.moreaccount_Img img {
+  border-radius: 50%;
+}
+.moreaccount_Img p {
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 400;
+  font-size: 22px !important;
+}
+.moreaccount_Img button {
+  margin-top: 10px;
+  padding: 15px 35px;
+
+  text-transform: capitalize;
+  color: #2962ff;
+  background: none;
+  border-radius: 100px;
+  border: 1px solid #747775;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+.moreaccount_Img button:hover,
+.moreacount_innerbox div:hover {
+  background-color: #dcdee3;
+}
+.moreaccount_Img span {
+  left: -20px;
+
+  font-size: 14px !important;
+  top: 65px !important;
+}
+.moreacount_innerbox {
+  background-color: white;
+  border-radius: 25px;
+  margin-top: 15px;
+}
+.moreacount_innerbox div {
+  display: flex;
+  padding: 17px 25px;
+  border-bottom: 3px solid #eaf1fb;
+}
+.moreacount_innerbox div p {
+  color: #1f1f1f;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+.signout_box span {
+  margin-right: 23px;
+  font-size: 18px;
+}
+.accountlast_img img {
+  position: relative;
+  top: 10px;
+  right: 5px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.accountlast_img span {
+  font-size: 14px;
+  color: #1f1f1f;
+  font-weight: 500;
+}
+.lastsignoutbox {
+  border: none !important;
+}
+.lastline_acountbox {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 12px;
+}
+.lastline_acountbox span {
+  margin-right: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.lastline_acountbox span:hover {
+  background-color: #dee0e3;
+}
+
+@media screen and (max-width: 576px) {
+
+  .moreaccountbox {
+    position: absolute;
+    z-index: 50;
+    right: 3px;
+    top: 60px;
+    width: 400px;
+    height: 580px;
+    border-radius: 30px;
+    background-color: #eaf1fb;
+    box-shadow: 2px 2px 5px rgb(160, 160, 160);
+  }
+}

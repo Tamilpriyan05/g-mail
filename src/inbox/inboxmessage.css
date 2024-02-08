@@ -1,0 +1,225 @@
+.inbox_msgbox {
+  padding: 20px;
+  background-color: #ffffff;
+  height: 78vh;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.msg_title {
+  margin-left: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.msg_title h2 {
+  width: 75%;
+  font-weight: 400;
+}
+.msg_title h2 span {
+  margin-left: 10px;
+  font-size: 12px;
+  color: rgb(99, 99, 99);
+  padding: 3px;
+  word-spacing: 5px;
+  background-color: rgb(210, 210, 210);
+  border-radius: 2px;
+}
+.msg_title div abbr {
+  color: rgb(90, 90, 90);
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.msg_title div abbr:hover,
+.reaction_msg abbr:hover {
+  background-color: rgb(244, 244, 244);
+}
+.inbox_mgsimg {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+.img_inbox {
+  width: 5%;
+}
+.inbox_textmsg {
+  width: 95%;
+}
+.img_inbox img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.inbox_textmsg h3 {
+  letter-spacing: normal;
+  color: #1f1f1f;
+  font-size: 14px;
+}
+.msgto span {
+  font-size: 0.75rem;
+  letter-spacing: normal;
+  color: #5e5e5e;
+}
+.msgto label {
+  margin-left: 5px;
+  font-size: 12px;
+}
+.inbox_textmsg h3 span {
+  color: grey;
+  margin-left: 5px;
+  font-weight: 400;
+  font-size: 13px;
+}
+.inbox_textmsg p {
+  margin-top: 25px;
+  color: #222;
+  text-align: justify;
+  font-size: 15px;
+}
+.address_line {
+  margin: 30px 0px;
+}
+.address_line p {
+  margin-top: 0px;
+}
+.inboxmsg_btn {
+  margin-left: 60px;
+}
+.inboxmsg_btn button {
+  margin-right: 20px;
+  padding: 10px 30px;
+  border-radius: 18px;
+  font-size: 14px;
+  background-color: transparent;
+  border: 1px solid #747775;
+  color: #444746;
+  cursor: pointer;
+  font-weight: 500;
+  outline: none;
+}
+.inboxmsg_btn img {
+  position: relative;
+  top: 13px;
+  width: 22px;
+  margin-right: 20px;
+
+  padding: 5px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid;
+}
+.reaction_msg abbr {
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  color: #8b8b8b;
+  cursor: pointer;
+}
+.reaction_msg span {
+  margin-right: 12px;
+  font-size: 12px;
+  color: #8b8b8b;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .msg_title {
+    margin-left: 30px;
+  }
+  .img_inbox {
+    width: 8%;
+  }
+  .inbox_textmsg {
+    width: 92%;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .msg_title {
+    margin-left: 5px;
+  }
+  .img_inbox {
+    width: 10%;
+  }
+  .inbox_textmsg {
+    width: 90%;
+  }
+  .msgto {
+    position: relative;
+    width: 50%;
+  }
+  .reaction_msg span {
+    position: absolute;
+    top: 65px;
+  }
+  .msg_title {
+    display: block;
+  }
+  .msg_title div {
+    display: none;
+  }
+  .msg_title h2 {
+    width: 100%;
+  }
+  .inboxmsg_btn button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border-radius: 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .msg_title {
+    margin-left: 5px;
+  }
+  .msg_title h2 {
+    font-size: 18px;
+  }
+  .msg_title h2 span {
+    display: none;
+  }
+  .img_inbox {
+    width: 13%;
+  }
+  .inbox_textmsg {
+    width: 87%;
+  }
+  .msgto {
+    position: relative;
+    width: 60%;
+  }
+  .reaction_msg {
+    width: 40%;
+  }
+  .reaction_msg span {
+    display: none;
+  }
+  .reaction_msg abbr {
+    font-size: 12px;
+    padding: 3px 5px;
+  }
+
+  .msg_title {
+    display: block;
+  }
+  .msg_title div {
+    display: none;
+  }
+  .msg_title h2 {
+    width: 100%;
+  }
+  .inboxmsg_btn button {
+    margin-right: 3px;
+    padding: 5px 10px;
+    border-radius: 18px;
+  }
+  .inboxmsg_btn {
+    margin-left: 10px;
+  }
+  .inboxmsg_btn img {
+    top: 10px;
+    width: 18px;
+    margin-right: 10px;
+    left: 3px;
+    padding: 5px;
+  }
+}

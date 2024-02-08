@@ -1,0 +1,35 @@
+.rescompose_box {
+  display: none;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  z-index: 110;
+}
+.rescompose_box button {
+  padding: 15px 25px;
+  background-color: #c2e7ff;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.rescompose_box button span {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .rescompose_box {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .rescompose_box {
+    display: block;
+  }
+}
+@media screen and (max-width: 576px) {
+  .rescompose_box {
+    display: block;
+  }
+}

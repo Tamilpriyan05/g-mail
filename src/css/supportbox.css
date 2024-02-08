@@ -1,0 +1,33 @@
+.supportbox {
+  position: absolute;
+  right: 120px;
+  top: 50px;
+  z-index: 50;
+  border-radius: 4px;
+  outline: 1px solid transparent;
+  height: fit-content;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px rgb(148, 148, 148);
+}
+.supportbox div {
+  margin-top: 10px;
+  padding-bottom: 3px;
+  border-bottom: solid 2px rgb(231, 231, 231);
+}
+.supportbox div p {
+  color: #202124;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+.supportbox p:hover {
+  background-color: rgb(235, 235, 235);
+  cursor: pointer;
+}
+.supportbox p {
+  padding: 15px 35px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
